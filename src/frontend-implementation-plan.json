@@ -1,0 +1,50 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Swap in newly generated red-accent mascot across the site",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Add newly generated square transparent PNG mascot derived from the uploaded sketch with a subtle red accent as a static frontend asset.",
+      "acceptanceCriteria": [
+        "A new PNG mascot asset exists in frontend/public/assets/generated with the exact filename specified in imageRequirements.required.",
+        "The mascot has a subtle red accent (not fully saturated, not dominant) and otherwise fits the existing grunge/sketch aesthetic.",
+        "The exported PNG has a transparent background and is visually centered with appropriate padding for use at small sizes (e.g., 40x40) without cropping."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/timepass-mascot-logo-upload-redhint.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the generated square transparent PNG mascot asset derived from Untitled_Artwork.jpeg, preserving the hand-drawn style with a subtle red accent and centered padding for small-size usage."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Replace existing mascot/logo images in HeroSection, TopNav, and FooterSection with the newly generated mascot asset and keep alt text English and brand-consistent.",
+      "acceptanceCriteria": [
+        "frontend/src/components/sections/HeroSection.tsx uses the new mascot asset path in its <img src=...>.",
+        "frontend/src/components/nav/TopNav.tsx uses the new mascot asset path in its <img src=...>.",
+        "frontend/src/components/sections/FooterSection.tsx uses the new mascot asset path in its <img src=...>.",
+        "All updated mascot <img> tags retain English alt text and do not introduce non-English UI text."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Update the hero mascot <img> to use /assets/generated/timepass-mascot-logo-upload-redhint.dim_512x512.png and adjust alt text to an English, brand-consistent value."
+        },
+        {
+          "path": "frontend/src/components/nav/TopNav.tsx",
+          "operation": "modify",
+          "description": "Update the TopNav mascot <img> to use /assets/generated/timepass-mascot-logo-upload-redhint.dim_512x512.png and adjust alt text to an English, brand-consistent value."
+        },
+        {
+          "path": "frontend/src/components/sections/FooterSection.tsx",
+          "operation": "modify",
+          "description": "Update the FooterSection mascot <img> to use /assets/generated/timepass-mascot-logo-upload-redhint.dim_512x512.png and adjust alt text to an English, brand-consistent value."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-generate-a-new-mascot-logo-image-derived-from-the-uploaded-image-untitled-artwork-jpeg-with-a-subtle-hint-of-red-while-preserving-the-sketch-hand-drawn-style-and-export-it-as-a-square-transparent-png-static-asset-under-frontend-public-assets-generated",
+      "featureTitle": "Generate a new mascot/logo image derived from the uploaded image (Untitled_Artwork.jpeg) with a subtle hint of red while preserving the sketch/hand-drawn style, and export it as a square transparent PNG static asset under frontend/public/assets/generated.",
+      "files": [],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-all-mascot-logo-usages-to-use-the-newly-generated-mascot-asset-herosection-topnav-footersection-while-keeping-existing-english-alt-text-consistent-with-the-brand-name",
+      "featureTitle": "Update all mascot/logo usages to use the newly generated mascot asset (HeroSection, TopNav, FooterSection) while keeping existing English alt text consistent with the brand name.",
+      "files": [
+        "frontend/src/components/nav/TopNav.tsx",
+        "frontend/src/components/sections/FooterSection.tsx",
+        "frontend/src/components/sections/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,2 +1,3 @@
-# apply-grunge-black-charcoal-palette-and-switch-mascot-to-pencil-sketch-black-cha
-Exported from Caffeine project: Use uploaded drawing as mascot and add subtle red accent
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

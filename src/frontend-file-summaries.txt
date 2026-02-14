@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component that renders the complete single-page sarcastic website with navigation and all sections in order.",
+  "frontend/src/components/nav/TopNav.tsx": "Fixed navigation bar with the new red-accented mascot logo from uploaded artwork, section links, active section highlighting, and smooth scroll behavior.",
+  "frontend/src/components/sections/HeroSection.tsx": "Hero section with the new red-accented mascot logo from uploaded artwork, sarcastic headline, textured background, and CTA buttons.",
+  "frontend/src/components/sections/SarcasmOfTheMomentSection.tsx": "Interactive section displaying rotating sarcastic one-liners with a button to cycle through them without page reload.",
+  "frontend/src/components/sections/FeaturesSection.tsx": "Features grid showcasing six intentionally absurd \"features\" with icons and sarcastic descriptions.",
+  "frontend/src/components/sections/TestimonialsSection.tsx": "Testimonials section with six fake reviews, now using charcoal-toned star ratings instead of yellow to match the black and charcoal palette.",
+  "frontend/src/components/sections/FooterSection.tsx": "Footer with the new red-accented mascot logo from uploaded artwork, fake navigation links, copyright line, and Caffeine.ai attribution with charcoal-themed heart icon.",
+  "frontend/src/components/content/sarcasmLines.ts": "Array of 20 sarcastic one-liners used in the Sarcasm of the Moment section.",
+  "frontend/src/hooks/useActiveSection.ts": "Custom hook using IntersectionObserver to track which section is currently visible for navbar highlighting.",
+  "frontend/src/hooks/useQueries.ts": "Empty file as backend has no methods; all content is client-side.",
+  "frontend/src/index.css": "Global CSS with OKLCH-based grunge black and charcoal color system for both light and dark modes, removing all red accents and using only grayscale tones.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended color tokens, typography, shadows, and animations matching the deadpan aesthetic.",
+  "frontend/index.html": "HTML entry point with updated page title reflecting the new \"Time-pass nhi ho rha\" brand name."
+}

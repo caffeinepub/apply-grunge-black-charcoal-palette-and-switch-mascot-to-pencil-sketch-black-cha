@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no backend logic.",
+  "feature_evidence.json": "JSON report listing two features with associated components, files, tests, and metadata.",
+  "frontend-file-summaries.txt": "Contains prewritten summaries for core frontend files and components.",
+  "frontend/index.css": "Defines global Tailwind base styles and a grayscale OKLCH variable color system for light and dark themes.",
+  "frontend/index.html": "HTML entry point that loads the SPA root and sets the page title.",
+  "frontend/src/App.tsx": "Top-level React component composing all site sections and navigation.",
+  "frontend/src/components/content/sarcasmLines.ts": "Exports an array of 20 sarcastic one‑liners for dynamic display.",
+  "frontend/src/components/nav/TopNav.tsx": "Navigation bar with scrolling behavior, active-section highlighting, and mascot logo.",
+  "frontend/src/components/sections/FeaturesSection.tsx": "Renders a grid of six humorous feature cards with icons.",
+  "frontend/src/components/sections/FooterSection.tsx": "Footer with mascot logo, grouped link lists, and attribution line.",
+  "frontend/src/components/sections/HeroSection.tsx": "Hero banner with background texture, mascot logo, headline, and CTA buttons.",
+  "frontend/src/components/sections/SarcasmOfTheMomentSection.tsx": "Interactive section cycling through sarcasm lines with a button.",
+  "frontend/src/components/sections/TestimonialsSection.tsx": "Renders a testimonials grid with humorous fake user quotes, using a static array of testimonial data. Includes layout, star ratings, and comedic disclaimers.",
+  "frontend/src/hooks/useActiveSection.ts": "Tracks which page section is currently visible using IntersectionObserver. Returns the active section ID to support navigation highlighting.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages a backend actor based on the current Internet Identity and refreshes dependent queries when the actor changes. Uses React Query to cache and refetch actor instances.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context, handling identity loading, login flow, logout, and status tracking. Wraps the app with an AuthClient-backed provider.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file indicating the backend exposes no methods.",
+  "frontend/src/index.css": "Defines Tailwind base styles and custom OKLCH color variables for light and dark themes, along with global typography and utility rules.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with React Query and Internet Identity providers before rendering App.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending fonts, colors, radii, shadows, animations, and enabling plugins for typography, container queries, and animations.",
+  "project_state.json": "Stores project metadata including features, image requirements, mascot generation tasks, and pending requests for a red-accented mascot."
+}

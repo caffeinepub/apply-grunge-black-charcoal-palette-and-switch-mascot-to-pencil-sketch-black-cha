@@ -1,0 +1,69 @@
+{
+  "kind": "build_request",
+  "title": "Use uploaded drawing as mascot and add subtle red accent",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Generate a new mascot/logo image derived from the uploaded image (Untitled_Artwork.jpeg) with a subtle hint of red while preserving the sketch/hand-drawn style, and export it as a square transparent PNG static asset under frontend/public/assets/generated.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "i would like the hint of red and make the given picture the m ascot"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new PNG mascot asset exists in frontend/public/assets/generated with the exact filename specified in imageRequirements.required.",
+        "The mascot has a subtle red accent (not fully saturated, not dominant) and otherwise fits the existing grunge/sketch aesthetic.",
+        "The exported PNG has a transparent background and is visually centered with appropriate padding for use at small sizes (e.g., 40x40) without cropping."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Update all mascot/logo usages to use the newly generated mascot asset (HeroSection, TopNav, FooterSection) while keeping existing English alt text consistent with the brand name.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "make the given picture the m ascot"
+        ]
+      },
+      "acceptanceCriteria": [
+        "frontend/src/components/sections/HeroSection.tsx uses the new mascot asset path in its <img src=...>.",
+        "frontend/src/components/nav/TopNav.tsx uses the new mascot asset path in its <img src=...>.",
+        "frontend/src/components/sections/FooterSection.tsx uses the new mascot asset path in its <img src=...>.",
+        "All updated mascot <img> tags retain English alt text and do not introduce non-English UI text."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/components/ui (read-only).",
+    "Do not edit files in frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, or frontend/src/main.tsx (immutable paths).",
+    "Backend must remain single-actor; no backend changes are required for this request."
+  ],
+  "nonGoals": [
+    "Adding new sections/features (e.g., the \"write your thoughts\" input area) beyond switching the mascot asset.",
+    "Changing the global grunge theme palette or typography beyond what is necessary to display the new mascot asset."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Hand-drawn sketch mascot derived from the uploaded portrait, with a subtle red accent and transparent background (timepass-mascot-logo-upload-redhint.dim_512x512.png)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

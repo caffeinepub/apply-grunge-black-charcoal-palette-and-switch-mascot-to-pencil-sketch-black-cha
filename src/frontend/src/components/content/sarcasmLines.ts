@@ -1,0 +1,22 @@
+export const sarcasmLines = [
+  "Oh great, another person who thinks they're special. How refreshing.",
+  "I'd agree with you, but then we'd both be wrong.",
+  "Your secrets are safe with me. I wasn't listening anyway.",
+  "I'm not saying I hate you, but I would unplug your life support to charge my phone.",
+  "Some people just need a high-five. In the face. With a chair.",
+  "I'm not always sarcastic. Sometimes I'm sleeping.",
+  "Congratulations on being the reason I have trust issues.",
+  "I'd explain it to you, but I left my English-to-Dingbat dictionary at home.",
+  "Oh, you're offended? Let me get my tiny violin.",
+  "I'm sorry, did the middle of my sentence interrupt the beginning of yours?",
+  "I'm not insulting you. I'm describing you.",
+  "Light travels faster than sound. That's why some people appear bright until they speak.",
+  "I'd like to see things from your point of view, but I can't seem to get my head that far up my—",
+  "You bring everyone so much joy... when you leave the room.",
+  "I'm not a complete idiot. Some parts are missing.",
+  "Sarcasm: because beating people up is illegal.",
+  "I'm not lazy. I'm just on energy-saving mode.",
+  "I'd tell you to go to hell, but I work there and don't want to see you every day.",
+  "Your opinion is very important to me. Please hold while I pretend to care.",
+  "I'm not arguing. I'm just explaining why I'm right."
+];

@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.375rem;
+        
+        /* Grunge Black & Charcoal theme - Light mode */
+        --background: 0.95 0.002 0;
+        --foreground: 0.15 0.005 0;
+        --card: 0.98 0.001 0;
+        --card-foreground: 0.15 0.005 0;
+        --popover: 0.98 0.001 0;
+        --popover-foreground: 0.15 0.005 0;
+        --primary: 0.15 0.005 0;
+        --primary-foreground: 0.95 0.002 0;
+        --secondary: 0.30 0.008 0;
+        --secondary-foreground: 0.95 0.002 0;
+        --muted: 0.85 0.003 0;
+        --muted-foreground: 0.45 0.006 0;
+        --accent: 0.25 0.007 0;
+        --accent-foreground: 0.95 0.002 0;
+        --destructive: 0.50 0.18 20;
+        --destructive-foreground: 0.95 0.002 0;
+        --border: 0.75 0.004 0;
+        --input: 0.75 0.004 0;
+        --ring: 0.40 0.008 0;
+    }
+
+    .dark {
+        /* Grunge Black & Charcoal theme - Dark mode */
+        --background: 0.08 0.005 0;
+        --foreground: 0.92 0.002 0;
+        --card: 0.12 0.006 0;
+        --card-foreground: 0.92 0.002 0;
+        --popover: 0.12 0.006 0;
+        --popover-foreground: 0.92 0.002 0;
+        --primary: 0.85 0.003 0;
+        --primary-foreground: 0.10 0.005 0;
+        --secondary: 0.25 0.008 0;
+        --secondary-foreground: 0.92 0.002 0;
+        --muted: 0.20 0.007 0;
+        --muted-foreground: 0.60 0.004 0;
+        --accent: 0.30 0.009 0;
+        --accent-foreground: 0.92 0.002 0;
+        --destructive: 0.55 0.20 20;
+        --destructive-foreground: 0.10 0.005 0;
+        --border: 0.22 0.007 0;
+        --input: 0.22 0.007 0;
+        --ring: 0.50 0.006 0;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold;
+        letter-spacing: -0.02em;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}

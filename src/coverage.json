@@ -1,0 +1,55 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-13T13:37:00.013Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Generate a new mascot/logo image derived from the uploaded image (Untitled_Artwork.jpeg) with a subtle hint of red while preserving the sketch/hand-drawn style, and export it as a square transparent PNG static asset under frontend/public/assets/generated.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/timepass-mascot-logo-upload-redhint.dim_512x512.png"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/timepass-mascot-logo-upload-redhint.dim_512x512.png"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Update all mascot/logo usages to use the newly generated mascot asset (HeroSection, TopNav, FooterSection) while keeping existing English alt text consistent with the brand name.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/sections/HeroSection.tsx",
+          "frontend/src/components/nav/TopNav.tsx",
+          "frontend/src/components/sections/FooterSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/sections/HeroSection.tsx",
+          "frontend/src/components/nav/TopNav.tsx",
+          "frontend/src/components/sections/FooterSection.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/timepass-mascot-logo-upload-redhint.dim_512x512.png",
+    "frontend/src/components/nav/TopNav.tsx",
+    "frontend/src/components/sections/FooterSection.tsx",
+    "frontend/src/components/sections/HeroSection.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
